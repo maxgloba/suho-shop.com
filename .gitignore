@@ -10,6 +10,8 @@ node_modules/
 *.sqlite
 *.zip
 
+info.txt
+
 # WordPress ignores
 # wp-content/plugins/
 wp-content/cache/

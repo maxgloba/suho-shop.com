@@ -62,9 +62,8 @@
       </header>
 
       <?php
-        if( !is_404() ){
-          echo 'hahahahahahaha';
+        if( !is_404() && !is_checkout() ):
           get_template_part( 'miniCart/cart', 'template' );
           get_template_part( 'miniCart/discount', 'template' );
-        }
+        endif;
       ?>
