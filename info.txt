@@ -1,0 +1,11 @@
+url: /home/suhoshop/suho-shop.com/www/
+domen: suhoshop.ftp.tools
+user: suhoshop
+pass: Nx3f2%T#
+ssh: ssh suhoshop@suhoshop.ftp.tools
+
+
+http://suho-shop.com/panel
+kolian
+kolian1988kolian1988@gmail.com
+O9(TWk5tn5md@qP8KJ)p0c)%
