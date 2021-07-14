@@ -1,0 +1,55 @@
+.btn{
+  font-size: 15px;
+  font-weight: 400;
+  padding: 10px 6px;
+  display: block;
+  box-sizing: border-box;
+  transition: .3s ease;
+  @media(min-width:992px){
+    font-size: 15px;
+  }
+  @media(min-width:1200px){
+    font-size: 18px;
+  }
+  &-more{
+    background-color: $white;
+    color: $dark;
+    border: 1px solid $dark;
+    border-radius: 4px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 14px;
+  }
+  &-add{
+    background-color: $green;
+    color: $white;
+    border: 1px solid $green;
+    border-radius: 4px;
+    text-decoration: none;
+    text-align: center;
+    i{
+      margin-right: 5px;
+    }
+  }
+  &:hover{
+    background-color: $dark;
+    border-color: $dark;
+    color: $white;
+  }
+  &-link{
+    background-color: transparent;
+    border: none;
+    color: $gray;
+    text-decoration: underline;
+    &:hover{
+      background-color: transparent;
+      color: $gray;
+      text-decoration: none;
+    }
+  }
+  &-continue{
+    border: 1px solid $dark;
+    background: none;
+    text-transform: uppercase;
+  }
+}

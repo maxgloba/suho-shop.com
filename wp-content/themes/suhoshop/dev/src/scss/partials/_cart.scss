@@ -1,0 +1,216 @@
+.cart{
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  position: fixed;
+  z-index: 10;
+  background: rgba(0,0,0, .7);
+  transition: opacity 1s ease;
+  padding: 30px;
+  &-wrap{
+    position: absolute;
+    max-width: 100%;
+    width: 640px;
+    background: $white;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px 15px 30px;
+  }
+  &-button{
+    display: flex;
+    align-items: center;
+    border: none;
+    background: $dark;
+    position: fixed;
+    left: 10px;
+    bottom: 10px;
+    color: $white;
+    padding: 8px 10px;
+    z-index: 9;
+    @media(min-width:768px){
+      left: 30px;
+      bottom: 30px;
+    }
+    &-hide{
+      visibility: hidden;
+    }
+    i{
+      font-size: 20px;
+      margin-right: 10px;
+      @media(min-width:768px){
+        font-size: 26px;
+      }
+    }
+    span{
+      font-size: 15px;
+      font-weight: 600;
+      @media(min-width:768px){
+        font-size: 18px;
+      }
+      &:before{
+        content: "₴";
+      }
+    }
+    &:hover{
+      opacity: .8;
+    }
+  }
+  h3{
+    font-size: 24px;
+    font-weight: 600;
+    padding: 0 50px;
+    text-align: center;
+  }
+  &-reserve{
+    color: #e74c3c;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 15px;
+    border-bottom: 1px solid $gray;
+  }
+  &-discount, &-shipping{
+    font-size: 16px;
+    color: $gray;
+    display: flex;
+    span{
+      margin-left: auto;
+    }
+  }
+  &-shipping{
+    padding-top: 10px;
+  }
+  &-total{
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    display: flex;
+    color: $dark;
+    font-weight: 600;
+    & > span{
+      margin-left: auto;
+      &:before{
+        content: "₴";
+      }
+    }
+  }
+  .btn{
+    width: 100%;
+    margin-top: 15px;
+    &-add{
+      font-size: 18px;
+    }
+  }
+  &-close{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    border: none;
+    background: none;
+    font-size: 20px;
+  }
+  &-items{
+    margin-bottom: 15px;
+    max-height: 270px;
+    overflow-y: auto;
+    @media(min-width:768px){
+      max-height: 453px;
+    }
+  }
+  &-item{
+    position: relative;
+    display: flex;
+    border-bottom: 1px solid $gray;
+    padding: 15px 0;
+    img{
+      display: block;
+      width: 60px;
+      height: 60px;
+      margin-right: 10px;
+      @media(min-width:768px){
+        width: 120px;
+        height: 120px;
+      }
+    }
+    h4{
+      display: block;
+      font-size: 18px;
+      margin-bottom: 4px;
+      @media(min-width:768px){
+        font-size: 22px;
+      }
+    }
+    .quantity{
+      display: flex;
+      align-items: center;
+      // justify-content: center;
+      button, span{
+        display: block;
+        width: 30px;
+        height: 26px;
+        text-align: center;
+      }
+      button{
+        padding: 0;
+        margin: 0;
+        color: $gray;
+        border: 1px solid $gray;
+        background: none;
+        font-size: 16px;
+        &:hover{
+          opacity: .5;
+        }
+      }
+      span{
+        font-size: 14px;
+        line-height: 26px;
+        &.price{
+          color: $red;
+          font-size: 18px;
+          font-weight: 600;
+          line-height: 26px;
+          margin-left: 10px;
+          &:before {
+            content: "₴";
+          }
+        }
+      }
+    }
+    .excerpt{
+      color: $gray;
+      font-size: 12px;
+      margin-bottom: 10px;
+      @media(min-width:768px){
+        font-size: 14px;
+      }
+    }
+  }
+  &-hide{
+    opacity: 0;
+    visibility: hidden;
+  }
+  &-remove{
+    font-size: 30px;
+    line-height: 1;
+    font-weight: 400;
+    transform: rotate(45deg);
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: none;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    @media(min-width:768px){
+      right: 10px;
+      top: 5px;
+    }
+    &:hover{
+      opacity: .8;
+    }
+  }
+}

@@ -1,0 +1,52 @@
+body{
+  background: $white;
+  font-size: 16px;
+  line-height: 1.2;
+  color: $dark;
+}
+
+@import 'partials/popup';
+
+
+.loader{
+  position: fixed;
+  z-index: 99999;
+  background: rgba(0,0,0, .5);
+  left: 0; right: 0;
+  top: 0; bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:before, &:after{
+    content:"";
+    border-right: 2px solid;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    left: 50%; top: 50%;
+  }
+  &:before{
+    width: 30px;
+    height: 30px;
+    border-color: $white;
+    animation: rotating 1s linear infinite;
+  }
+  &:after{
+    width: 50px;
+    height: 50px;
+    border-color: $green;
+    animation: rotating .5s linear infinite;
+  }
+  &-hide{
+    display: none;
+  }
+}
+
+@keyframes rotating {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}

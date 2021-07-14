@@ -1,0 +1,115 @@
+.product{
+  // text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  & > a{
+    display: block;
+    overflow: hidden;
+    margin-bottom: 15px;
+    img{
+      display: block;
+      margin-bottom: 0;
+    }
+    &:hover{
+      img{
+        transform: scale(1.05);
+      }
+    }
+  }
+  img{
+    transition: transform .5s ease;
+    display: block;
+    margin-bottom: 5px;
+    @media(min-width:768px){
+      margin-bottom: 10px;
+    }
+  }
+  h4{
+    margin-bottom: 5px;
+    @media(min-width:768px){
+      margin-bottom: 10px;
+    }
+    a{
+      color: $green;
+      font-size: 16px;
+      text-decoration: none;
+      font-weight: 500;
+      @media(min-width:768px){
+        font-size: 20px;
+      }
+      &:hover{
+        color: black;
+      }
+    }
+  }
+  &-desc{
+    color: $gray;
+    font-size: 11px;
+    margin-bottom: 10px;
+    @media(min-width:768px){
+      font-size: 13px;
+      margin-bottom: 15px;
+    }
+  }
+  .price{
+    color: $red;
+    font-size: 20px;
+    font-weight: 700;
+    &-old{
+      color: $gray;
+      text-decoration: line-through;
+      display: inline-block;
+      margin-left: 5px;
+      font-size: 18px;
+    }
+    &-wrap{
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    &-sale{
+      background: #e74c3c;
+      border-radius: 3px;
+      color: #fff;
+      display: inline-block;
+      font-size: 12px;
+      line-height: 12px;
+      margin-left: 10px;
+      margin-top: -5px;
+      padding: 4px 7px;
+      position: relative;
+      vertical-align: middle;
+      margin-right: 5px;
+      &:before {
+        border-color: transparent #e74c3c transparent transparent;
+        border-style: solid;
+        border-width: 10px 10px 10px 0;
+        content: '';
+        display: block;
+        height: 0;
+        left: 0;
+        position: absolute;
+        top: 50%;
+        transform: translate(-7px, -50%);
+        width: 0;
+        transition: all .2s linear;
+      }
+    }
+  }
+  ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: -5px;
+    margin-right: -5px;
+    li{
+      flex: 1 50%;
+      max-width: 50%;
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+  }
+  .btn{
+    width: 100%;
+  }
+}

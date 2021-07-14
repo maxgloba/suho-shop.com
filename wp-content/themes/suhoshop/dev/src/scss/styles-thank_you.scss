@@ -1,0 +1,40 @@
+@import 'variables/colors';
+@import 'base/all';
+
+@import 'partials/main-header';
+@import 'partials/main-footer';
+
+.thankyou-content{
+  height: calc(100vh - 155px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 60px 0;
+  @media(min-width:768px){
+    height: calc(100vh - 221px);
+  }
+  h1 {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1;
+    color: $dark;
+    margin-bottom: 30px;
+  }
+  h2 {
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 1;
+    color: $dark;
+    margin-bottom: 15px;
+  }
+  p {
+    font-size: 16px;
+    line-height: 1;
+    color: $dark;
+  }
+}
+
+.cart, .cart-button, .discount{
+  display: none !important;
+}

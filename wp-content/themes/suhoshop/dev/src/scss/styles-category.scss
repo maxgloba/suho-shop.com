@@ -1,0 +1,24 @@
+@import 'variables/colors';
+@import 'base/all';
+
+@import 'partials/main-header';
+@import 'partials/main-footer';
+@import 'partials/cart';
+@import 'partials/cat';
+@import 'partials/sort';
+@import 'partials/discount';
+@import 'partials/product-list';
+
+@import 'components/btn';
+
+.page-category{
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.row{
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.product{
+  max-width: 25%;
+}
