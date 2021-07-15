@@ -1,11 +1,23 @@
+host: https://www.ukraine.com.ua/
+Логин: kolian1988kolian1988@gmail.com
+Пароль: T1ijh5h6
+
 url: /home/suhoshop/suho-shop.com/www/
 domen: suhoshop.ftp.tools
 user: suhoshop
 pass: Nx3f2%T#
 ssh: ssh suhoshop@suhoshop.ftp.tools
 
+url: http://suho-shop.com/panel
+user: kolian
+email: kolian1988kolian1988@gmail.com
+pass: O9(TWk5tn5md@qP8KJ)p0c)%
 
-http://suho-shop.com/panel
-kolian
-kolian1988kolian1988@gmail.com
-O9(TWk5tn5md@qP8KJ)p0c)%
+url: http://suho-shop.com/panel
+user: support
+email: support@suho-shop.com
+pass: iUNK4%y(73)i
+
+webmail: support@suho-shop.com
+url: https://adm.tools/action/hosting/auth/token_open/?target=mailbox&account_id=429077&id=1002681
+pass: iUNK4%y(73)i
