@@ -32,10 +32,12 @@ fields.forEach(field => {
 
 const
   address = document.getElementById('billing_address_1_field'),
+  city = document.getElementById('billing_city_field'),
   deliveryArr = ['Новая почта', 'Укрпочта', 'Justin'],
   deliveryBox = document.createElement("div")
   deliveryBox.classList.add('delivery'),
   deliveryFun = () => {
+    deliveryBox.innerHTML = '';
     deliveryArr.forEach((item, i) => {
       let
         input = document.createElement("input")
@@ -56,6 +58,8 @@ const
 
     address.appendChild(deliveryBox)
     setBillingAddress()
+    address.style.display = 'block';
+    city.style.display = 'block';
   },
   setBillingAddress = () => {
     const deliveryRadios = document.querySelectorAll('[name="delivery"]')
@@ -71,4 +75,9 @@ const
     })
   }
 
+address.style.display = 'none';
+city.style.display = 'none';
+
 setTimeout(deliveryFun, 1000)
+
+document.getElementById('billing_city').addEventListener('change', deliveryFun);
