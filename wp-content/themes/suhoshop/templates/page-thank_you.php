@@ -25,6 +25,7 @@ if (isset($_SERVER['HTTP_COOKIE'])) {
     setcookie($name, '', time()-1000, '/');
   }
 }
+wp_destroy_current_session();
 ?>
 
 <?php
