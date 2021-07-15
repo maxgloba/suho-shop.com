@@ -3,8 +3,19 @@
   <head>
 
     <meta charset="<?php bloginfo( 'charset' ); ?>">
-    <meta name="keywords" content="<?php bloginfo('keywords'); ?>"/>
-    <meta name="description" content="<?php bloginfo('description'); ?>"/>
+
+    <?php if(get_field('keywords')): ?>
+      <meta name="keywords" content="<?php the_field('keywords'); ?>"/>
+    <?php else: ?>
+      <meta name="keywords" content="<?php bloginfo('keywords'); ?>"/>
+    <?php endif; ?>
+
+    <?php if(get_field('description')): ?>
+      <meta name="description" content="<?php the_field('description'); ?>"/>
+    <?php else: ?>
+      <meta name="description" content="<?php bloginfo('description'); ?>"/>
+    <?php endif; ?>
+
     <meta name="copyright" content="<?php bloginfo('copyright'); ?>">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="viewport" content="width=device-width, user-scalable=no, user-scalable=0, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0 user-scalable=0">
